@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HabitCard from '@/components/HabitCard.vue';
 import { LucideMenu } from 'lucide-vue-next';
 
 </script>
@@ -12,12 +13,17 @@ import { LucideMenu } from 'lucide-vue-next';
 
 
 
-        <div class="flex justify-center h-full mt-3">
+        <div class="flex items-center flex-col h-full mt-3">
             <h1 class="text-4xl font-extrabold text-white">Ritual <span class="text-black">Today</span></h1>
 
-            <div>
-
+            <div class="w-full grid grid-cols-2 gap-6 mt-6 px-8">
+                <HabitCard />
+                <HabitCard />
+                <HabitCard />
+                <HabitCard />
             </div>
         </div>
+
+        
     </div>
 </template>
